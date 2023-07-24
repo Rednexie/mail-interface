@@ -7,6 +7,7 @@ const log = require("./log");
 const mailer = require("./mailer")
 const mail = require("./mail")
 
+const port = 80;
 
 app.use(express.static("static"))
 
@@ -30,9 +31,15 @@ app.get("/", async(req, res) => {
     mailer(email);
     log(ip + " => " + email)
     
+    consoled.bright.green(ip + " => " + email)
+    
     res.status(200).json({
       "status": "success",
       "message": "500 emails sent."
     })
   }
+})
+
+app.listen(port, () => {
+  consoled.bright.blue("Listening on port: " + port)
 })
