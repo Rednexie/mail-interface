@@ -13,7 +13,7 @@ app.use(express.static("static"))
 
 app.get("/", async(req, res) => {
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  const email = req.params.mail.trim();
+  const email = req.query.mail.trim();
   if(!email || email == null){
     return res.status(401).json({
       status: "error",
