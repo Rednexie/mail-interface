@@ -4,7 +4,7 @@ node.js e-mail spammer api
 # Advantages 
 has small code, and only a few dependencies
 
-logs e-mails along with the ip addresses
+logs e-mails along with the ip addresses and times
 
 500 e-mail will be sent for each request
 
