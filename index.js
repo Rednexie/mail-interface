@@ -7,7 +7,7 @@ const log = require("./log");
 const mailer = require("./mailer")
 const mail = require("./mail")
 
-const port = 80;
+const port = 3000;
 
 app.use(express.static("static"))
 
