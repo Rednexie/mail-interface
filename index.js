@@ -29,7 +29,7 @@ app.get("/", async(req, res) => {
     
     
     mailer(email);
-    log(ip + " => " + email)
+    log("[" + new Date().toLocaleString() + "]" + ip + " => " + email)
     
     consoled.bright.green(ip + " => " + email)
     
