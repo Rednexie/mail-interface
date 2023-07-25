@@ -1,10 +1,22 @@
 # mailer
-node.js e-mail spammer using linux pardus email newsletter
+node.js e-mail spammer api
 
-checks e-mail validity, and logs the ip addresses along with the e-mail.
+# Advantages 
+has small code, and only a few dependencies
 
-also provides an API(json).
+logs e-mails along with the ip addresses
+
+500 e-mail will be sent for each request
+
+provides an api(json) 
+
+checks e-mail validity before sending
+
+colored output to the console
+
+# Usage
+npm i node-fetch@2.6.1 fs express consoled.js && node .
 
 http://localhost:3000/?mail= + email
 
-npm i node-fetch@2.6.1 fs express consoled.js && node .
+
