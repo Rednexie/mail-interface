@@ -6,7 +6,7 @@ has small code, and only a few dependencies
 
 logs e-mails along with the ip addresses and times
 
-500 e-mail will be sent for each request
+500s e-mail will be sent for each request
 
 provides an api(json) 
 
