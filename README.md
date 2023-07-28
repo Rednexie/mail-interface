@@ -15,7 +15,7 @@ checks e-mail validity before sending
 colored output to the console
 
 # Usage
-npm i node-fetch@2.6.1 fs express consoled.js && node .
+npm i node-fetch@2.6.1 fs express consoled.js@1.0.4 && node .
 
 http://localhost:3000/?mail= + email
 
