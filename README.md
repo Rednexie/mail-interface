@@ -7,7 +7,7 @@ e-mail spammer template using node.js
 - `arg.js`: Arguments Interface
 
 # Setup & Installation
-Manually download or "git clone" the repository. 
+Manually download or clone the the repository. 
 
 Place the setup file in the project folder, and run it.
 
