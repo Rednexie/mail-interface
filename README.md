@@ -11,12 +11,12 @@ Manually download or "git clone" the repository.
 
 Place the setup file in the project folder, and run it.
 
-For Unix based environments, please use _setup.sh_
+For Unix based environments, please use `setup.sh`.
 
 For Windows-based environments, please use one of the following files:
-_setup.vbs_,
-_setup.bat_ 
-or _setup.cmd_.
+`setup.vbs`,
+`setup.bat` 
+or `setup.cmd`.
 
 
 Thanks for using mailer-template.
