@@ -2,7 +2,7 @@
 e-mail spammer template using node.js
 
 
-This repository was originally an e-mail spammer, using the subscription form in the website https://pardus.org.tr. And after the vulnerability was reported by me, the website developers have quickly fixed the issue. Now this repo is an "e-mail spammer template" rather than a spammer. I can consider a collab if you have access to send e-mails either via smtp or an api.
+This repository was originally an e-mail spammer, using the subscription form in the website https://pardus.org.tr. After the vulnerability was reported by me, the website developers have taken action, and quickly fixed the issue. Now this repo is an "e-mail spammer template" rather than a spammer. I can consider a collab if you have access to send e-mails either via smtp or an api.
 
 # Supported Interfaces
 - `index.js`: Application Programming Interface(API)
