@@ -32,3 +32,9 @@ or `setup.cmd`.
 Add your code that sends one e-mail into `modules/sender.js`
 
 Setup and start your server. 
+
+# Possible Updates
+
+Proxy configuration
+
+More interfaces, such as discord/guilded bots etc.
