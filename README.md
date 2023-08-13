@@ -9,6 +9,12 @@ This repository was originally an e-mail spammer, using the subscription form in
 - `cli.js` Command Line Interface(CLI)
 - `arg.js`: Arguments Interface
 
+# Features: 
+
+- Provides a JSON API.
+- Provides command-line tools(readline and args).
+- Customizable rate-limit, number of e-mails sent and the delay between sending e-mails.
+
 # Setup & Installation
 Manually download, or clone the the repository. 
 
@@ -21,5 +27,8 @@ For Windows-based environments, please use one of the following files:
 `setup.bat` 
 or `setup.cmd`.
 
+# Usage
 
-Thanks for using mailer-template.
+Add your code that sends one e-mail into `modules/sender.js`
+
+Setup and start your server. 
