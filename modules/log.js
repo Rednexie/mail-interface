@@ -1,12 +1,10 @@
 const fs = require("fs");
+const path = require("path")
 const fix = `\n`
-
 const fetch = require("node-fetch");
-
-const filePath = "../log.txt"
+const filePath = path.join(__dirname, "../log.txt")
 
 function log(text) {
-  const filePath = './log.txt';
 
   fs.access(filePath, (err) => {
     if (err) {
@@ -27,7 +25,7 @@ function log(text) {
 
 
 function clear() {
-  fs.unlink('./log.txt', (err) => {
+  fs.unlink(filePath, (err) => {
     if (err) {
       console.log('\x1b[31m%s\x1b[0m', `Error deleting file: \n${err.message}`);
       return;
