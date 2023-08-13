@@ -1,5 +1,6 @@
 @echo off
 color a
+echo https://github.com/Rednexie/mailer-template
 echo.
 echo Welcome to mailer-template installer for Windows.
 echo "This script will install the dependencies and help you to setup your server."
