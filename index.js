@@ -1,15 +1,21 @@
 const fs = require("fs");
-const consoled = require("consoled.js")
+const consoled = require("consoled.js") // consoled.js by rednexie
 const express = require("express");
+const ratelimit = require("express-rate-limit");
 const app = express();
 const fetch = require("node-fetch") // npm i node-fetch@2.6.1
-const log = require("./log");
-const mailer = require("./mailer")
-const mail = require("./mail")
+const log = require("./modules/log.js");
+const sender = require("./modules/sender");
+const valid = require("./modules/valid");
+const { times, delay, rate} = require("./config.json").api
+const { port } = require("./config.json")
 
-const port = 3000;
 
-app.use(express.static("static"))
+app.use(ratelimit({
+  windowMs: 1 * 60 * 1000, 
+  max: rate 
+}))
+
 
 app.get("/", async(req, res) => {
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
@@ -20,7 +26,7 @@ app.get("/", async(req, res) => {
       message: "no email provided",
     });
     
-    if(mail(email) == false){
+    if(valid(email) == false){
       return res.status(400).json({
         status: "error",
         message: "invalid email",
@@ -28,7 +34,7 @@ app.get("/", async(req, res) => {
     }
     
     
-    mailer(email);
+    sender(email);
     log("[" + new Date().toLocaleString() + "]" + ip + " => " + email)
     
     consoled.bright.green(ip + " => " + email)
