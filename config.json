@@ -1,11 +1,11 @@
 {
   "cli": {
-    "delay": 10,
+    "delay": 25,
     "times": 1000
   },
   
   "api": {
-    "delay": 10,
+    "delay": 50,
     "times": 500
   },
   
