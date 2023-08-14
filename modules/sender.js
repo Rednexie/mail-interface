@@ -1,3 +1,5 @@
+const fetch = require("node-fetch")
+
 function direct(email) {
     fetch("https://floodmail.net/free/" + email.trim(), {
       headers: {
