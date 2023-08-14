@@ -4,7 +4,7 @@ const fetch = require("node-fetch") // npm i node-fetch@2.6.1
 const { times, delay } = require("./config.json").cli;
 const valid = require("./modules/valid")
 const sender = require("./modules/sender")
-
+const log = require("./modules/log.js");
 let mail = "";
 
 function prompt(question, callback) {
@@ -40,11 +40,15 @@ function send(times){
     return prompt("How much times do you want to send?", send)
   }
   
+  log("[" + new Date().toLocaleString("tr-TR") + "]" + "cli" + " => " + mail + " x" + Math.round(times))
+  consoled.bright.green(`Sending ${times} ${times == 1 ? "email" : "emails"} to: ${mail}`)
+  
   for(let i = 0; i < times + 1; i++){
     setTimeout(() => {
       sender(mail);
     },delay)
   }
+  
 }
 
 
