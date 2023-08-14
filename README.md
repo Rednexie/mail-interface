@@ -14,7 +14,7 @@ This repository was originally an e-mail spammer, using the subscription form in
 - Log the Date, IP Address, and the e-mail into both console and text file.
 - Provides a JSON API.
 - Provides command-line tools(readline and args).
-- Customizable rate-limit, number of e-mails sent and the delay between sending e-mails.
+- Customizable rate-limit, number of e-mails sent and the default delay between sending e-mails.
 
 # Setup & Installation
 Manually download, or clone the the repository. 
