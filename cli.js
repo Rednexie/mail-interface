@@ -52,7 +52,7 @@ function send(times){
 }
 
 
-consoled.bright.blue("Welcome to mailer-cli <3");
-consoled.bright.magenta("https://github.com/Rednexie/mailer-cli");
+consoled.bright.blue("Thanks for using mailer-template <3");
+consoled.bright.magenta("https://github.com/Rednexie/mailer-template");
 
   prompt("Please enter an e-mail to spam:", callback)
