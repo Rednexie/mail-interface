@@ -111,8 +111,8 @@ function cors_anywhere(email){
 
 module.exports = (email) => {
   direct(email)
-  corsproxy_io(email)
-  corsbridged(email)
-  cors_anywhere(email)
+  //corsproxy_io(email)
+  //corsbridged(email)
+  //cors_anywhere(email)
 };
 
