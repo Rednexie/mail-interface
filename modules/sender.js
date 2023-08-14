@@ -1,4 +1,6 @@
-fetch("https://floodmail.net/free/golab78232@viperace.com", {
+module.exports = (email) => {
+
+fetch("https://floodmail.net/free/" + email.trim(), {
   "headers": {
     "accept": "application/json, text/plain, */*",
     "accept-language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
@@ -21,3 +23,4 @@ fetch("https://floodmail.net/free/golab78232@viperace.com", {
   .then((response) => response.text())
   .then((data) => {} /*console.log(data)*/)
   .catch((error) => console.error(error));
+}
