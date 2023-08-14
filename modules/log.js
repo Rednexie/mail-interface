@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 const { log } = require("../config.json"); 
 const filePath = path.join(__dirname, `../${log}`)
 
-function log(text) {
+function logs(text) {
 
   fs.access(filePath, (err) => {
     if (err) {
@@ -56,6 +56,6 @@ function empty() {
 }
 
 
-module.exports = log;
+module.exports = logs;
 module.exports.empty = empty;
 module.exports.clear = clear;
