@@ -35,8 +35,12 @@
     consoled.bright.red("Error: times must be greater than 0.");
     process.exit(0)
   }
-  log("[" + new Date().toLocaleString("tr-TR") + "]" + "arg" + " => " + email + " x" + Math.round(times))
-  consoled.bright.green(`Sending ${times} ${times == 1 ? "email" : "emails"} to: ${email}`)
+
+consoled.bright.blue("Thanks for using mailer-template <3");
+consoled.bright.magenta("https://github.com/Rednexie/mailer-template");
+
+log("[" + new Date().toLocaleString("tr-TR") + "]" + "arg" + " => " + email + " x" + Math.round(times))
+consoled.bright.green(`Sending ${times} ${times == 1 ? "email" : "emails"} to: ${email}`)
 
   for(let i = 0; i < times + 1; i++){
     setTimeout(() => {
