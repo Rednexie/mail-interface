@@ -19,7 +19,7 @@ This repository was originally an e-mail spammer, using the subscription form in
 # Setup & Installation
 Manually download, or clone the the repository. 
 
-Place the setup file in the project folder, and run it.
+Move the needed setup file based on your environment from the folder scripts to the project folder, and run it.
 
 For Unix based environments, please use `setup.sh`.
 
