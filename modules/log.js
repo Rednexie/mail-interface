@@ -2,7 +2,8 @@ const fs = require("fs");
 const path = require("path")
 const fix = `\n`
 const fetch = require("node-fetch");
-const filePath = path.join(__dirname, "../log.txt")
+const { log } = require("../config.json"); 
+const filePath = path.join(__dirname, `../${log}`)
 
 function log(text) {
 
