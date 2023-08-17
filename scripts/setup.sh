@@ -1,7 +1,7 @@
 #!/bin/bash
 echo https://github.com/Rednexie/mailer-template
 echo
-echo Welcome to mailer-template installer for Windows.
+echo Welcome to mailer-template installer for Linux.
 echo "This script will install the dependencies and help you to setup your server."
 echo "Starting to install..."
 echo
