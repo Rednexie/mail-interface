@@ -57,7 +57,7 @@
     
     
     
-    log("[" + new Date().toLocaleString("tr-TR") + "]" + ip + " => " + email + " x" + Math.round(times))
+    log("\n[" + new Date().toLocaleString("tr-TR") + "]" + ip + " => " + email + " x" + Math.round(times))
     consoled.bright.blue("[" + new Date().toLocaleString("tr-TR") + "] " + ip + " => " + email + " x" + Math.round(times))
     
     for(let i = 0; i < Number(times) + 1; i++){
@@ -113,7 +113,7 @@
       }
 
   
-      log("[" + new Date().toLocaleString("tr-TR") + "] " + ip + " => " + email + " x" + times)
+      log("\n[" + new Date().toLocaleString("tr-TR") + "] " + ip + " => " + email + " x" + times)
       consoled.bright.blue("[" + new Date().toLocaleString("tr-TR") + "]" + ip + " => " + email + " x" + times)
       
     for(let i = 0; i < Number(times) + 1; i++){
