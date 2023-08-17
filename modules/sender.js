@@ -2,10 +2,14 @@ const fetch = require("node-fetch");
 const cache = require("./cache.js");
 const { ip } = require("../config.json")
 function direct(email) {
+  
+  const random = ip.slice(0, -1) + Math.floor(Math.random() * 256);
 
   
   fetch("https://floodmail.net/free/" + email.trim(), {
     headers: {
+      "x-real-ip": random,
+      "x-forwarded-for": random,
       accept: "application/json, text/plain, */*",
       "accept-language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
       "cache-control": "no-cache",
@@ -65,69 +69,9 @@ function corsproxy_io(email) {
     .catch((error) => console.error(error));
 }
 
-function corsbridged(email) {
-  fetch("https://cors.bridged.cc/https://floodmail.net/free/" + email.trim(), {
-    headers: {
-      accept: "application/json, text/plain, */*",
-      "accept-language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
-      "cache-control": "no-cache",
-      pragma: "no-cache",
-      "sec-ch-ua":
-        '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
-      "sec-ch-ua-mobile": "?0",
-      "sec-ch-ua-platform": '"Windows"',
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-    },
-    referrer: "https://floodmail.net",
-    referrerPolicy: "strict-origin-when-cross-origin",
-    body: "",
-    method: "POST",
-    mode: "cors",
-    credentials: "omit",
-  })
-    .then((response) => response.text())
-    .then((data) => {} /*console.log(data)*/)
-    .catch((error) => console.error(error));
-}
 
-function cors_anywhere(email) {
-  fetch(
-    "https://cors-anywhere.herokuapp.com/https://floodmail.net/free/" +
-      email.trim(),
-    {
-      headers: {
-        "x-requested-with": "fetch",
-        accept: "application/json, text/plain, */*",
-        "accept-language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
-        "cache-control": "no-cache",
-        pragma: "no-cache",
-        "sec-ch-ua":
-          '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
-        "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": '"Windows"',
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "same-origin",
-      },
-      referrer: "https://floodmail.net",
-      referrerPolicy: "strict-origin-when-cross-origin",
-      body: "",
-      method: "POST",
-      mode: "cors",
-      credentials: "omit",
-    }
-  )
-    .then((response) => response.text())
-    .then((data) => {} /*console.log(data)*/)
-    .catch((error) => console.error(error));
-}
 
 module.exports = (email) => {
   direct(email);
-  if(Math.random() < 0.1) corsproxy_io(email)
-  //corsproxy_io(email)
-  //corsbridged(email)
-  //cors_anywhere(email)
+  corsproxy_io(email)
 };
