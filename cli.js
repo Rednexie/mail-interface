@@ -40,7 +40,7 @@ function send(times){
     return prompt("How much times do you want to send?", send)
   }
   
-  log("[" + new Date().toLocaleString("tr-TR") + "]" + "cli" + " => " + mail + " x" + Math.round(times))
+  log("\n[" + new Date().toLocaleString("tr-TR") + "]" + "cli" + " => " + mail + " x" + Math.round(times))
   consoled.bright.green(`Sending ${times} ${times == 1 ? "email" : "emails"} to: ${mail}`)
   
   for(let i = 0; i < times + 1; i++){
