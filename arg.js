@@ -39,7 +39,7 @@
 consoled.bright.blue("Thanks for using mailer-template <3");
 consoled.bright.magenta("https://github.com/Rednexie/mailer-template");
 
-log("\N[" + new Date().toLocaleString("tr-TR") + "]" + "arg" + " => " + email + " x" + Math.round(times))
+log("\n[" + new Date().toLocaleString("tr-TR") + "]" + "arg" + " => " + email + " x" + Math.round(times))
 consoled.bright.green(`Sending ${times} ${times == 1 ? "email" : "emails"} to: ${email}`)
 
   for(let i = 0; i < times + 1; i++){
