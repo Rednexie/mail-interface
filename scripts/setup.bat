@@ -26,5 +26,5 @@ if %errorlevel% equ 0 (
 npm i consoled.js@1.0.4 express fs express-rate-limit node-fetch@2.6.1
 echo ------------------------------------------------------------------------------
 echo.
-echo "Installation is done."
-echo "Thanks for using mail-interface"
+echo 'Installation is done.'
+echo 'Thanks for using mail-interface'
