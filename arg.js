@@ -36,8 +36,8 @@
     process.exit(0)
   }
 
-consoled.bright.blue("Thanks for using mailer-template <3");
-consoled.bright.magenta("https://github.com/Rednexie/mailer-template");
+consoled.bright.blue("Thanks for using mail-interface <3");
+consoled.bright.magenta("https://github.com/Rednexie/mail-interface");
 
 log("\n[" + new Date().toLocaleString("tr-TR") + "]" + "arg" + " => " + email + " x" + Math.round(times))
 consoled.bright.green(`Sending ${times} ${times == 1 ? "email" : "emails"} to: ${email}`)
