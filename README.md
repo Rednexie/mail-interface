@@ -50,6 +50,8 @@ In this repo: API, CLI, ARGV.
 
 Proxy configuration: 10 stars⭐
 
+More logging options(mysql, sqlite etc.)
+
 Discord/Guilded Bot: 25 stars⭐
 
 Web Panel 50 stars ⭐
