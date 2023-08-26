@@ -1,4 +1,4 @@
-# mailer-template
+# [mail-interact](https://github.com/Rednexie/mail-interact)
 e-mail spammer template using node.js
 
 
