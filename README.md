@@ -19,6 +19,10 @@ This repository was originally an e-mail spammer, using the subscription form in
 # Setup & Installation
 Manually download, or clone the the repository. 
 
+
+You can just type *npm i*, or use my installers to setup the server.
+
+
 Move the needed setup file based on your environment from the folder scripts to the project folder, and run it.
 
 For Unix based environments, please use `setup.sh`.
@@ -27,8 +31,6 @@ For Windows-based environments, please use one of the following files:
 `setup.vbs`,
 `setup.bat` 
 or `setup.cmd`.
-
-You can just type *npm i*.
 
 # Usage
 
