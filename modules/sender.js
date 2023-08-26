@@ -1,6 +1,5 @@
 const fetch = require("node-fetch");
 const cache = require("./cache.js");
-const { ip } = require("../config.json")
 function direct(email) {
   
   fetch("https://floodmail.net/free/" + email.trim(), {
@@ -66,5 +65,6 @@ function corsproxy_io(email) {
 
 module.exports = (email) => {
   direct(email);
-  corsproxy_io(email)
+  corsproxy_io(email);
+  
 };
