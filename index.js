@@ -98,13 +98,13 @@
       message: "times must be positive"
     });
     
-    if(!email || email == null){
+    if(email == null || typeof email != "string){
       return res.status(401).json({
         status: "error",
         message: "no email provided",
         usage: "/?mail=example@mail.com"
       });
-
+    }
       if(valid(email) == false){
         return res.status(400).json({
           status: "error",
@@ -126,7 +126,7 @@
         "status": "success",
         "message": "successfully sent " + Math.round(times) + " e-mails."
       })
-    }
+    
   })
   consoled.bright.magenta("mail-interface by rednexie")
   consoled.bright.magenta("https://github.com/Rednexie/mail-interface")
