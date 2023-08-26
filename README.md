@@ -44,6 +44,7 @@ This will listen the port 3000 by default, but you can customize it from `config
 
 Proxy configuration.
 
-More interfaces, such as discord/guilded bots etc.
+
+More interfaces, such as discord/guilded bots, web panel etc.
 
 
