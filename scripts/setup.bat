@@ -1,10 +1,10 @@
 @echo off
-color a
+color 0f
 echo https://github.com/Rednexie/mail-interface
 echo.
 echo Welcome to mail-interface installer for Windows.
-echo "This script will install the dependencies and help you to setup your server."
-echo "Starting to install..."
+echo 'This script will install the dependencies and help you to setup your server.'
+echo 'Starting to install...'
 echo.
 echo ------------------------------------------------------------------------------
 where node >nul 2>&1
