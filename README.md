@@ -44,11 +44,14 @@ This will listen the port 3000 by default, but you can customize it from `config
 - to use the cli, run the file: *node `cli.js`*, and enter an e-mail adress along with the number of e-mails.
 - to use arguments, run the file: *node `arg.js` e-mail times*
 
-# Possible Update
+# Possible Updates
 
-Proxy configuration.
+In this repo: API, CLI, ARGV.
 
+Proxy configuration: 10 stars⭐
 
-More interfaces, such as discord/guilded bots, web panel etc.
+Discord/Guilded Bot: 25 stars⭐
 
+Web Panel 50 stars ⭐
 
+Thanks for using mail-interface.
