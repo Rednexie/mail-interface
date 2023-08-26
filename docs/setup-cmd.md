@@ -1,1 +1,1 @@
-`move scripts/setup.cmd . && setup.cmd && del setup.cmd`
+`move .\scripts\setup.cmd . && setup.cmd && del setup.cmd`
