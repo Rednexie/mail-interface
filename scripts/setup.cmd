@@ -1,8 +1,8 @@
 @echo off
 color a
-echo https://github.com/Rednexie/mail-interact
+echo https://github.com/Rednexie/mail-interface
 echo.
-echo Welcome to mail-interact installer for Windows.
+echo Welcome to mail-interface installer for Windows.
 echo "This script will install the dependencies and help you to setup your server."
 echo "Starting to install..."
 echo.
@@ -27,4 +27,4 @@ npm i consoled.js@1.0.4 express fs express-rate-limit node-fetch@2.6.1
 echo ------------------------------------------------------------------------------
 echo.
 echo "Installation is done."
-echo "Thanks for using mail-interact"
+echo "Thanks for using mail-interface"
