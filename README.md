@@ -20,7 +20,7 @@ This repository was originally an e-mail spammer, using the subscription form in
 Manually download, or clone the the repository. 
 
 
-You can just type *npm i*, or use my installers to setup the server.
+You can just type *npm i*, or use my installers to setup the server:
 
 
 Move the needed setup file based on your environment from the folder scripts to the project folder, and run it.
