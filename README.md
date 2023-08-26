@@ -1,5 +1,5 @@
-# [mail-interact](https://github.com/Rednexie/mail-interact)
-e-mail spammer template using node.js
+# [mail-interface](https://github.com/Rednexie/mail-interface)
+e-mail spammer with node.js - with various interfaces
 
 
 This repository was originally an e-mail spammer, using the subscription form in the website https://pardus.org.tr. After the vulnerability was reported by me, the website developers have taken action, and quickly fixed the issue. Now this repository is using floodmail.net's e-mail spam API. I can consider a collab if you have access to send e-mails either via smtp or an api. Or you can just use the repository with your own e-mail sender function, by exporting it from the module file `modules/sender.js`. 
