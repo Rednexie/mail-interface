@@ -128,7 +128,8 @@
       })
     }
   })
-
+  consoled.bright.magenta("mail-interface by rednexie")
+  consoled.bright.magenta("https://github.com/Rednexie/mail-interface")
   app.listen(port, () => {
     consoled.bright.blue("Listening on port: " + port)
   })
