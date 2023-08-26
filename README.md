@@ -28,6 +28,8 @@ For Windows-based environments, please use one of the following files:
 `setup.bat` 
 or `setup.cmd`.
 
+You can just type *npm i*.
+
 # Usage
 
 Add your code that sends one e-mail into `modules/sender.js`, and setup the server.
