@@ -98,7 +98,7 @@
       message: "times must be positive"
     });
     
-    if(email == null || typeof email != "string){
+    if(email == null || typeof email != "string"){
       return res.status(401).json({
         status: "error",
         message: "no email provided",
