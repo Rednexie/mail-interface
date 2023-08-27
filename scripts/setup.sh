@@ -1,7 +1,7 @@
 #!/bin/bash
 echo https://github.com/Rednexie/mail-interface
 echo
-echo Welcome to mail-interface installer for Linux(Bash).
+echo Welcome to mail-interface installer for Linux - Bash.
 echo "This script will install the dependencies and help you to setup your server."
 echo "Starting to install..."
 echo
