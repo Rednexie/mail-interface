@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = (email) => {
 
   fetch("https://floodmail.net/free/" + email.trim().split("@")[0] + "+" + Math.round(Math.random() * 10) + email.trim().split("@")[1], {
     headers: {
