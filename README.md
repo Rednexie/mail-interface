@@ -48,9 +48,7 @@ This will listen the port 3000 by default, but you can customize it from `config
 
 In this repo: API, CLI, ARGV.
 
-Proxy configuration: 10 stars⭐
-
-More logging options(mysql, sqlite etc.)
+Proxy configuration and More logging options(mysql, perma.db, json etc.): 10 stars⭐
 
 Discord/Guilded Bot: 25 stars⭐
 
