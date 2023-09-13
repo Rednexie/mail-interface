@@ -32,7 +32,7 @@
         usage: "/example@mail.com"
       });
     
-    const ip = req.headers['x-real-ip']?.replace("::ffff:","") || req.headers['x-forwarded-for'].split(",")[0].replace("::ffff:","") || req.connection.remoteAddress;
+    const ip = req.headers['x-real-ip']?.replace("::ffff:","") || req.headers['x-forwarded-for']?.split(",")[0]?.replace("::ffff:","") || req.connection.remoteAddress;
     const email = decodeURIComponent(req.params.id);
     const times = req.query.times || 500;
     if(valid(email) == false){
@@ -82,7 +82,7 @@
       });
     
     
-    const ip = req.headers['x-real-ip']?.replace("::ffff:","") || req.headers['x-forwarded-for'].split(",")[0].replace("::ffff:","") || req.connection.remoteAddress;
+    const ip = req.headers['x-real-ip']?.replace("::ffff:","") || req.headers['x-forwarded-for']?.split(",")[0]?.replace("::ffff:","") || req.connection.remoteAddress;
     const email = req.query.mail.trim()
     const times = req.query.times || 500;
     if(isNaN(Number(times))) return res.status(400).json({
