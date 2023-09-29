@@ -44,7 +44,7 @@ This will listen the port 3000 by default, but you can customize it from `config
 - to use the cli, run the file: ```bash
 node cli.js
   and enter an e-mail adress along with the number of e-mails.
-- to use arguments, run the file: ```node arg.js \<e-mail\> times```
+- to use arguments, run the file: ```node arg.js <e-mail> <times>```
 
 # Possible Updates
 
