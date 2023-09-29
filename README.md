@@ -20,7 +20,7 @@ This repository was originally spamming the target e-mail addresses using the su
 Manually download, or clone the the repository. 
 
 
-You can just type *npm i*, or use my installers to setup the server:
+You can just type ```bash npm i```, or use my installers to setup the server:
 
 
 Move the needed setup file based on your environment from the folder scripts to the project folder, and run it.
@@ -37,7 +37,7 @@ or `setup.cmd`.
 Add your code that sends one e-mail into `modules/sender.js`, and setup the server.
 
 
-- to make the api available, start the server: *node `index.js`*. 
+- to make the api available, start the server: ```bash node `index.js```. 
 
 
 This will listen the port 3000 by default, but you can customize it from `config.json`.
