@@ -2,7 +2,7 @@
 e-mail spammer with node.js - with various interfaces
 
 
-This repository was originally spamming the target e-mail addresses using the subscription form in the website https://pardus.org.tr. After the vulnerability was reported by me, the website developers have taken action, and quickly fixed the issue. I am looking for email sending access to use in this repository.. I can consider a collab if you have access to send e-mails either via smtp or an api. Or you can just use the system with your own e-mail sender function, by exporting it from the module file `modules/sender.js`. 
+This repository was originally spamming the target e-mail addresses using the subscription form in the website https://pardus.org.tr. After the vulnerability was reported by me, the website developers have taken action, and quickly fixed the issue, so this repo now sends fewer emails. I can consider a collab if you have access to send e-mails either via smtp or an api. Or you can just use the repository with your own e-mail sender function, by exporting it from the module file `modules/sender.js`. 
 
 # Supported Interfaces
 - `index.js`: Application Programming Interface(API)
@@ -48,7 +48,9 @@ This will listen the port 3000 by default, but you can customize it from `config
 
 In this repo: API, CLI, ARGV.
 
-Proxy configuration and More logging options(mysql, perma.db, json etc.): 10 stars⭐
+Proxy configuration: 10 stars⭐
+
+More logging options(mysql, sqlite etc.)
 
 Discord/Guilded Bot: 25 stars⭐
 
