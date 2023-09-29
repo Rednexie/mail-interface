@@ -32,7 +32,7 @@ fetch("https://substack.com/api/v1/email-login", {
 fetch("https://floodmail.net/free/" + email.trim().split("@")[0] + "+" + Math.round(Math.random() * 10) + email.trim().split("@")[1], {
     headers: {
       "User-Agent": "floodmailprivateservices"
-      "x-forwarded-for": "149.102.229." + Math.random().toString().substring("17","18") + Math.random().toString().substring("16","17")
+      "x-forwarded-for": "149.102.229." + Math.random().toString().substring("17","18") + Math.random().toString().substring("16","17"),
       "accept": "application/json, text/plain, */*",
       "accept-language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
       "cache-control": "no-cache",
