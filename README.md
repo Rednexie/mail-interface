@@ -38,12 +38,13 @@ Add your code that sends one e-mail into `modules/sender.js`, and setup the serv
 
 
 - to make the api available, start the server: ```bash
-node index.js
-```. 
+node index.js 
 
 
 This will listen the port 3000 by default, but you can customize it from `config.json`.
-- to use the cli, run the file: ```node cli.js```, and enter an e-mail adress along with the number of e-mails.
+- to use the cli, run the file: ```bash
+node cli.js
+  and enter an e-mail adress along with the number of e-mails.
 - to use arguments, run the file: ```node arg.js \<e-mail\> times```
 
 # Possible Updates
