@@ -46,6 +46,9 @@ and enter an e-mail adress along with the number of e-mails.
 - to use arguments, run the file: ```node arg.js <e-mail> <times>```
 
 # Possible Updates
+5 stars:
+- ⭐ Cloud hosting platform integration
+- ⭐ More mails
 
 10 Stars: 
 - ⭐ Proxy configuration
