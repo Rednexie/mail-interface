@@ -47,14 +47,17 @@ and enter an e-mail adress along with the number of e-mails.
 
 # Possible Updates
 
-In this repo: API, CLI, ARGV.
+10 Stars: 
+- ⭐ Proxy configuration
+- More logging options(mysql, perma.db, json etc.)
 
-Proxy configuration: 10 stars⭐
+25 stars:
+- ⭐ Discord & Guilded Bot
 
-More logging options(mysql, sqlite etc.)
+50 stars:
+- ⭐ Web Panel with accounts, admin, csrf protection etc.
 
-Discord/Guilded Bot: 25 stars⭐
 
-Web Panel 50 stars ⭐
+
 
 Thanks for using mail-interface.
