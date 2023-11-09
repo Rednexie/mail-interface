@@ -52,7 +52,7 @@ and enter an e-mail adress along with the number of e-mails.
 
 10 Stars: 
 - ⭐ Proxy configuration
-- ⭐ More logging options(mysql, perma.db, json etc.)
+- ⭐ More logging options(mysql, mongodb, perma.db, json etc.)
 
 25 stars:
 - ⭐ Discord & Guilded Bot
