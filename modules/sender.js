@@ -17,9 +17,9 @@ fetch("https://www.pardus.org.tr/wp-json/contact-form-7/v1/contact-forms/1701/fe
   },
   "referrer": "https://www.pardus.org.tr/",
   "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": "------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7\"\r\n\r\n1701\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_version\"\r\n\r\n5.8.7\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_locale\"\r\n\r\nen_US\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_unit_tag\"\r\n\r\nwpcf7-f1701-p8387-o1\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_container_post\"\r\n\r\n8387\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_posted_data_hash\"\r\n\r\n2346f7dda6da4e8a51b621bc3679a887\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"e-mail\"\r\n\r\nswbgvn@hldrive.com\r\n------WebKitFormBoundary0kwF942rg8jkMHlt--\r\n",
+  "body": "------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7\"\r\n\r\n1701\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_version\"\r\n\r\n5.8.7\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_locale\"\r\n\r\nen_US\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_unit_tag\"\r\n\r\nwpcf7-f1701-p8387-o1\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_container_post\"\r\n\r\n8387\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"_wpcf7_posted_data_hash\"\r\n\r\n2346f7dda6da4e8a51b621bc3679a887\r\n------WebKitFormBoundary0kwF942rg8jkMHlt\r\nContent-Disposition: form-data; name=\"e-mail\"\r\n\r\n" + mail + "\r\n------WebKitFormBoundary0kwF942rg8jkMHlt--\r\n",
   "method": "POST",
   "mode": "cors",
   "credentials": "include"
 })
-});
+}
