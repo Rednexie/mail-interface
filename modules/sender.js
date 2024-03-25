@@ -34,3 +34,56 @@ module.exports = (email) => {
     .then((data) => {})
     .catch((err) => console.error(err));
 };
+
+
+
+module.exports.mail = (email) => {
+
+
+
+fetch("https://news.easypanel.io/subscription/form", {
+  method: 'POST',
+  headers: {
+    'Cache-Control': 'max-age=0',
+    'Sec-Ch-Ua': '"Not(A:Brand";v="24", "Chromium";v="122"',
+    'Sec-Ch-Ua-Mobile': '?0',
+    'Sec-Ch-Ua-Platform': '"Windows"',
+    'Upgrade-Insecure-Requests': '1',
+    'Origin': 'https://easypanel.io',
+    'Content-Type': 'application/x-www-form-urlencoded',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'Sec-Fetch-Site': 'same-site',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-User': '?1',
+    'Sec-Fetch-Dest': 'document',
+    'Referer': 'https://easypanel.io/',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7',
+    'Priority': 'u=0, i',
+  },
+  body: "email=" + email + "&l=adbdd93a-f80a-4639-8e1e-1aa6cbfaa91f"
+})
+  .then(response => {
+    if (response.ok) {
+      return response.text(); // You can use response.json() if the response is in JSON format
+    } else {
+      throw new Error('Network response was not ok');
+    }
+  })
+  .then(data => {
+    console.log('Received data:', data);
+    // Handle the data as needed
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+    // Handle the error
+  });
+
+  
+
+
+
+
+
+
